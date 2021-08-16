@@ -8,9 +8,7 @@ Client End:
 Update your Server URL in Client environment typescript file
 baseURL:"https://{your server machine name or localhost}:{port number}/"
 Run Client in Visual Studio Code Project.
-
-Server End:
-Don't include "Client' project in Server side [.NET Core]. Keep it excluded.
+Run Server API's on .NET Core
 
 
 Tech Stack:
