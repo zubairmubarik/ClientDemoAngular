@@ -1,0 +1,53 @@
+<!-- * * * * * * * * * * * * * * * * * * Story: Demo Client * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * Author: Zubair Mubarik * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * Date :  15th Aug 2021 * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * Description: Demo Project * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<div class="container"> 
+    <div class=" text-center mt-12 ">
+    <h1>Convert Temperature</h1>
+</div>
+
+<div class="row ">
+    <div class="col-lg-7 mx-auto">
+        <div class="card mt-2 mx-auto p-4 bg-light">
+            <div class="card-body bg-light">
+                <div class="container">
+                    <form id="contact-form" role="form">
+                        <div class="controls">                       
+                            <div class="row">
+                                <div class="col-md-6">                                  
+                                     <select id="convertType" name="convertType" [(ngModel)]="convertType" required="required" >
+                                         <option value="ConvertCelsiusToFahrenheit" selected>Celsius To Fahrenheit</option>
+                                         <option value="ConvertCelsiusToKelvin">Celsius To Kelvin</option>
+                                         <option value="ConvertKelvinToFahrenheit">Kelvin To Fahrenheit</option>
+                                         <option value="ConvertKelvinToCelsius">Kelvin To Celsius</option>
+                                         <option value="ConvertFahrenheitToKelvin">Fahrenheit To Kelvin</option>
+                                         <option value="ConvertKelvinToCelsius">Kelvin To Celsius</option>
+                                         <option value="ConvertFahrenheitToKelvin">Fahrenheit To Kelvin</option>
+                                         <option value="ConvertFahrenheitToCelsius">Fahrenheit To Celsius</option>   
+                                         </select> 
+                                 </div>
+                                <div class="col-md-3">                                    
+                                    <input type="number" name="temperatureNumber" class="form-control" [(ngModel)]="temperatureValue" required="required"> 
+                                </div>                                
+                                <div class="col-md-3"><button type="button" class="btn btn-primary" (click)="CalculateClick()" data-backdrop="static" data-keyboard="false"  >Calculate</button></div>
+                            </div>  
+                            <div class="row">
+                                <div class="col-md-12" *ngIf='temp != null'>                                  
+                                    <span> Convertion Result: {{selectedValue}} {{temp.value}}&nbsp;{{temp.unit}} </span>
+                                </div>
+                            </div>                              
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div> 
+    </div> 
+</div>
+
+<!-- * * * * * * * * * * * * * * * * * * Story: Demo Client * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * Author: Zubair Mubarik * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * Date :  15th Aug 2021 * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->

@@ -1,1 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
+/* * * * * * * * * * * * * * * * * * * Author: Zubair Mubarik * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * Date : 15th Aug 2021 * * * * * * * * * * * * * * * * * * * * * */
+/* ** * Description: You can add global styles to this file, and also import other style files * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*
+ * */
+
+@import url('../node_modules/bootstrap/dist/css/bootstrap.min.css');
+
+.top-buffer { margin-top:40px; }
+
+input[type="number"] {
+    width: 100px;
+    height: 30px;
+}
+
+select{
+    height: 30px;
+}
+
+button{
+    height: 30px;
+}
+
+body {
+    font-family: 'Lato', sans-serif
+}
+
+h1 {
+    margin-bottom: 40px
+}
+
+label {
+    color: #333
+}
+
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    width: 80%;
+    margin-left: 3px
+}
+
+.help-block.with-errors {
+    color: #ff5050;
+    margin-top: 5px
+}
+
+.card {
+    margin-left: 10px;
+    margin-right: 10px
+}
